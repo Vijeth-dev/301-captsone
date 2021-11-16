@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "QED/f1QK5oU6d+Dgnvd4d/iwrtGyNBzPokAxJfic0mmXM+7OH47fYK1CCGHGyQ7bqj/1ZYP795Ge2D3Xz0tw0Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\M1053749\\source\\repos\\Capstone 301 project - Restaurant management system\\CustomerManagement\\CustomerManagementRepository\\CustomerManagementRepository.csproj",
+  "expectedPackageFiles": [
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
