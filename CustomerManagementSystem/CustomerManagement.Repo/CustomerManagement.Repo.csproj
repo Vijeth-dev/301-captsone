@@ -13,8 +13,4 @@
     </PackageReference>
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\CustomerManagement\CustomerManagement.Api.csproj" />
-  </ItemGroup>
-
 </Project>

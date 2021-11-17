@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using CustomerManagement.Repo.Entities.Models;
 using CustomerManagement.Service.Abstractions;
 using Microsoft.AspNetCore.Mvc;
 
@@ -18,10 +19,10 @@ namespace CustomerManagement.Api.Controllers
         }
     // GET api/values
     [HttpGet]
-    public ActionResult<IEnumerable<string>> Get()
+    public ActionResult<IEnumerable<TblCustomer>> Get()
     {
-            return _customerService.GetCustomerDetails();
-    }
+            return Ok(_customerService.GetCustomerDetails());
+        }
 
     // GET api/values/5
     [HttpGet("{id}")]
