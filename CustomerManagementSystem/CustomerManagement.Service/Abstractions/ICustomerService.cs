@@ -9,5 +9,6 @@ namespace CustomerManagement.Service.Abstractions
     public interface ICustomerService
     {
         public IEnumerable<TblCustomer> GetCustomerDetails();
+        public IEnumerable<TblCustomer> CustomerDetails(int id);
     }
 }

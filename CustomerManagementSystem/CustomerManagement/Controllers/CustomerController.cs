@@ -22,7 +22,7 @@ namespace CustomerManagement.Api.Controllers
     public ActionResult<IEnumerable<TblCustomer>> Get()
     {
             return Ok(_customerService.GetCustomerDetails());
-        }
+    }
 
     // GET api/values/5
     [HttpGet("{id}")]
