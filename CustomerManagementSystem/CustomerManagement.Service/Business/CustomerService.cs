@@ -14,7 +14,7 @@ namespace CustomerManagemenrSystem.Service.Business
             _customerManagementRepo = customerRepository;
         }
 
-        public IEnumerable<TblCustomer> GetCustomerDetails()
+        public int AddCustomer(Customer customer)
         {
            return _customerManagementRepo.GetCustomers();
         }
