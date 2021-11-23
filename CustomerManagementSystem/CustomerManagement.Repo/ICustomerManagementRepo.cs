@@ -7,6 +7,6 @@ namespace CustomerManagement.Repo
 {
     public interface ICustomerManagementRepo
     {
-        public IEnumerable<TblCustomer> GetCustomers();
+        int UserRegisteration(TblCustomer customerDetails, byte[] passwordSalt);
     }
 }

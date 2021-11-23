@@ -20,5 +20,23 @@ namespace CustomerManagement.Repo
         {
             return _context.TblCustomer;
         }
+        public int UserRegisteration(TblCustomer user, byte[] passwordSalt)
+        {
+            _context.TblCustomer.Add(new TblCustomer
+            {
+                FirstName = user.FirstName,
+                LastName = user.LastName,
+                Password = user.Password,
+                PasswordKey = passwordSalt.ToString(),
+                Email = user.Email,
+                MobileNumber = user.MobileNumber,
+                Address = user.Address,
+                UserCreated = 2,
+                CreatedDate = DateTime.Now,
+                Active = true
+            });
+            return _context.SaveChanges();
+
+        }
     }
 }

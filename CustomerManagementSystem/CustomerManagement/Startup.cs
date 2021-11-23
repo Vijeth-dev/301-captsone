@@ -7,7 +7,9 @@ using AutoMapper;
 using CustomerManagemenrSystem.Service.Business;
 using CustomerManagement.Repo;
 using CustomerManagement.Repo.Entities.Context;
+using CustomerManagement.Repo.Entities.Models;
 using CustomerManagement.Service.Abstractions;
+using CustomerManagement.Service.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -113,6 +115,7 @@ namespace CustomerManagement.Api
             {
                 endpoints.MapControllers();
             });
+            Mapper.CreateMap<TblCustomer, Customer>();
         }
     }
 }

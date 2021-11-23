@@ -26,7 +26,7 @@ namespace CustomerManagement.Service.Models
               .NotNull()
               .WithMessage("Password  is required");
 
-            RuleFor(m => m.PhoneNumber)
+            RuleFor(m => m.MobileNumber)
               .NotEmpty()
               .NotNull()
               .WithMessage("Mobile  is required");
